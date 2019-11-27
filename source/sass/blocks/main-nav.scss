@@ -1,0 +1,27 @@
+.menu-list {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-list__link {
+  display: inline-block;
+  width: 320px;
+  text-align: center;
+  font-family: "Oswald-Medium", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $lightBlack;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 0 20px 0;
+}
+
+.main-nav__toggle {
+  display: block;
+  text-align: left;
+  width: 320px;
+  background-color: $white;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,17 @@
+.page-header__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-size: (320px, 305px);
+  background-repeat: no-repeat;
+}
+
+.page-header__title-slogan {
+  font-family: "Oswald-Regular", "Arial", sans-serif;
+  color: $white;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 29px;
+}
