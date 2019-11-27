@@ -1,3 +1,7 @@
+.catalog-list {
+  border-top: $greyBorder;
+}
+
 .catalog-list,
 .product__description-list,
 .product__property-list,
@@ -9,33 +13,4 @@
 .catalog-list__product {
   display: flex;
   flex-wrap: wrap;
-}
-
-.product__wrapper {
-  width: 140px;
-}
-
-.product__title {
-  display: block;
-  font-family: $font-Regular;
-  font-size: 16px;
-  text-transform: uppercase;
-  width: 72px;
-  margin-bottom: 18px;
-}
-
-.product__description-list {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-}
-
-.product__description {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 7px;
-}
-
-.product__property-right {
-  margin-left: auto;
 }
