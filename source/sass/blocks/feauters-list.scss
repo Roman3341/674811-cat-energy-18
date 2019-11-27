@@ -1,0 +1,35 @@
+.feauters-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feauters-list__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.feauters-list__img {
+  width: 45px;
+  height: 45px;
+}
+
+.feauters-list__img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: $green;
+  margin-right: 20px;
+}
+
+
+.feauters-list__item-text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 194px;
+  padding: 6px 0;
+  margin: 0;
+}

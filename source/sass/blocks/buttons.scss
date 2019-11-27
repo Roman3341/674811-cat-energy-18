@@ -1,11 +1,12 @@
 .button {
   display: inline-block;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-Regular;
   border: 0;
   background-color: $green;
   color: $white;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 11px 52px 11px 52px;
+  padding: 11px 73px;
+  min-width: 280px;
 }

@@ -1,6 +1,7 @@
 .modes-list {
   list-style: none;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .modes-list__wrapper {
@@ -19,6 +20,10 @@
   margin-bottom: 20px;
 }
 
+.modes-list__item:last-child{
+  margin-bottom: 0;
+}
+
 .modes-list__img--cat-sit {
   z-index: 1;
   position: relative;
@@ -34,12 +39,13 @@
 }
 
 .modes-list__item-title {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 19px; //Шрифт подогнал, чтобы не ломалась li
+  font-family: $font-Regular;
+  font-size: 24px;
   line-height: 37px;
   margin-top: 30px;
   margin-left: 27px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .modes-list__item-title::before {
@@ -56,7 +62,7 @@
 }
 
 .modes-list__item-text {
-  font-family: "Arial", "Oswald", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   border-bottom: $greyBorder;
@@ -65,7 +71,7 @@
 
 .modes-list__item-link {
   position: relative;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $font-Regular;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
