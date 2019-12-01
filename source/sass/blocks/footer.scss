@@ -1,0 +1,45 @@
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.footer__row--academy {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  font-family: $font-Medium;
+  line-height: 30px;
+  font-size: 28px;
+  text-transform: uppercase;
+  padding: 39px 0 31px 0;
+  margin: 0;
+}
+
+.footer__logo--cat {
+  font-weight: bolder;
+}
+
+.footer__production {
+  text-decoration: none;
+  color: $black;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.footer__academy-logo {
+  width: 35px;
+  height: 40px;
+}
