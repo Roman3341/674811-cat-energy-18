@@ -11,6 +11,7 @@
   margin-bottom: 19px;
 
   @include tablet {
+    min-width: 420px;
     text-align: left;
     font-size: 60px;
     color: $lightBlack;

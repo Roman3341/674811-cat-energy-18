@@ -1,3 +1,9 @@
+.main-nav {
+  @include tablet {
+    padding-top: 12px;
+  }
+}
+
 .main-nav__toggle {
   display: flex;
   justify-content: space-between;
@@ -6,17 +12,24 @@
   background-color: $white;
 }
 
+.main-nav__logo {
+  @include tablet {
+    height: 59px;
+  }
+}
+
 .main-nav__toggle-wrapper {
   border-bottom: $greyBorder;
 
   @include tablet {
+    display: flex;
+    align-items: center;
     border: 0;
-    margin-right: 44px;
-    margin-bottom: 61px;
   }
 }
 
 .main-nav__wrapper {
+  padding: 0;
   @include tablet {
     display: flex;
     justify-content: space-between;
