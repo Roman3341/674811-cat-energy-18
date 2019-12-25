@@ -1,8 +1,35 @@
 .social-network-list {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
   width: 128px;
   padding: 0;
   margin: 24px 0 21px 0;
+}
+
+.social-network-list__link-img {
+  &--vk {
+    @include tablet {
+      fill: $brown-gray;
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  &--inst {
+    @include tablet {
+      fill: $brown-gray;
+      width: 23px;
+      height: 23px;
+    }
+  }
+
+  &--fb {
+    @include tablet {
+      fill: $brown-gray;
+      width: 14px;
+      height: 28px;
+    }
+  }
 }

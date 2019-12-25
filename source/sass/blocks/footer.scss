@@ -1,8 +1,20 @@
+.footer {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+  }
+}
+
 .footer__row {
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  @include tablet {
+    border: 0;
+  }
 }
 
 
@@ -32,9 +44,17 @@
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
+
+  @include tablet {
+    color: $brown-gray;
+  }
 }
 
 .footer__academy-logo {
   width: 35px;
   height: 40px;
+
+  @include tablet {
+    fill: $brown-gray;
+  }
 }

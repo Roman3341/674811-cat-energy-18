@@ -4,6 +4,11 @@
   font-weight: normal;
   margin: 0;
   margin-bottom: 35px;
+
+  @include tablet {
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .section-title--catalog {
