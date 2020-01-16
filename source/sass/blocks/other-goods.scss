@@ -1,5 +1,6 @@
 .other-goods {
   position: relative;
+  margin-bottom: 35px;
 }
 
 .other-goods__title {
@@ -29,6 +30,10 @@
 
 .other-goods__list {
   list-style: none;
+
+  @include tablet {
+    margin-bottom: 69px;
+  }
 }
 
 .other-goods__list-item {
@@ -36,6 +41,20 @@
   border-bottom: $greyBorder;
   padding-top: 14px;
   padding-bottom: 17px;
+
+  @include tablet {
+    padding: 28px 37px;
+    border-top: 0;
+    border-left: $greyBorder;
+    border-right: $greyBorder;
+    height: 140px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:first-child {
+      border-top: $greyBorder;
+    }
+  }
 }
 
 .other-goods__item-title {
@@ -46,11 +65,20 @@
   font-size: 16px;
   line-height: 16px;
   margin-bottom: 15px;
+
+  @include tablet {
+    width: 50%;
+  }
 }
 
 .other-goods__text-wrapper {
   display: flex;
   justify-content: space-between;
+
+  @include tablet {
+    width: 50%;
+    justify-content: flex-end;
+  }
 }
 
 .other-goods__price {
@@ -58,14 +86,25 @@
   font-size: 14px;
   line-height: 14px;
   margin-bottom: 14px;
+
+  @include tablet {
+    &--money {
+      margin-left: 52px;
+    }
+  }
 }
 
 .other-goods__gift {
   position: relative;
 }
 
-.other-goods__gift img {
+.other-goods__gift-img {
+  height: 289px;
   width: 100%;
+
+  @include tablet {
+    height: 200px;
+  }
 }
 
 .other-goods__gift-wrapper {
@@ -77,10 +116,22 @@
   top: 65px;
   left: 50%;
   transform: translateX(-78px);
+
+  @include tablet {
+    flex-direction: row;
+    justify-content: space-between;
+    left: 121px;
+    transform: none;
+    width: 492px;
+  }
 }
 
 .other-goods__gift-wrapper svg {
   margin-bottom: 64px;
+
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .other-goods__gift-text {
@@ -91,4 +142,8 @@
   line-height: 20px;
   color: $white;
   width: 156px;
+
+  @include tablet {
+    text-align: left;
+  }
 }
