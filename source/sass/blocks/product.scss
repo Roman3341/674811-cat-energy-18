@@ -14,6 +14,19 @@
       margin-bottom: 0;
     }
   }
+
+  @include desktop {
+    margin-bottom: 142px;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-bottom: 142px;
+    }
+
+    &:nth-last-child(2) {
+      margin-bottom: 142px;
+    }
+  }
 }
 
 .product__wrapper {
@@ -67,12 +80,16 @@
       background-color: $white;
     }
   }
+
+  @include desktop {
+    width: 245px;
+  }
 }
 
 
 .product__title {
   display: block;
-  font-family: $font-Regular;
+  font-family: $Oswald;
   font-size: 16px;
   text-transform: uppercase;
   width: 74px;
@@ -196,7 +213,7 @@
 
     &--big {
       height: 208px;
-      margin-top: -82px;
+      top: -82px;
     }
 
     &--plus {

@@ -17,7 +17,7 @@
 }
 
 
-.footer__row--academy {
+.footer__row-academy {
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
@@ -25,35 +25,42 @@
 }
 
 .footer__logo {
-  font-family: $font-Medium;
-  line-height: 30px;
-  font-size: 28px;
-  text-transform: uppercase;
-  padding: 39px 0 31px 0;
-  margin: 0;
+  margin: 39px 0 31px 0;
+  width: 128px;
+  height: 24px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
-.footer__logo--cat {
-  font-weight: bolder;
+.footer__logo-cat {
+  font-weight: bold;
 }
 
 .footer__production {
   text-decoration: none;
-  color: $black;
+  color: $greyish-brown;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
-
-  @include tablet {
-    color: $brown-grey;
-  }
 }
 
 .footer__academy-logo {
   width: 35px;
   height: 40px;
+  fill: $brown-grey;
+}
 
-  @include tablet {
-    fill: $brown-grey;
-  }
+.footer__production:hover + .footer__academy-logo {
+  fill: $green;
+}
+
+.footer__production:active,
+.footer__production:active + .footer__academy-logo {
+  opacity: 0.3;
 }
