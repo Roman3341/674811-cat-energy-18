@@ -44,16 +44,6 @@
   }
 }
 
-.product__border-wrapper {
-  border-bottom: $greyBorder;
-  padding-bottom: 25px;
-
-  @include tablet {
-    border: 0;
-    padding-bottom: 0;
-  }
-}
-
 .product__container {
   position: relative;
   display: flex;

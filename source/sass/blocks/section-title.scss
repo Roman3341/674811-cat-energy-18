@@ -8,12 +8,20 @@
   margin-right: auto;
   line-height: 60px;
 
-  &--example {
-    padding-top: 10px;
-  }
-
   @include tablet {
     font-size: 60px;
+    line-height: 60px;
     margin-bottom: 75px;
   }
+
+  &--example {
+    padding-top: 10px;
+
+    @include tablet {
+      padding-top: 0;
+      margin-bottom: 63px;
+    }
+  }
+
+
 }
